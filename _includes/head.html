@@ -1,0 +1,29 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  {%- feed_meta -%}
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], processEscapes: true },
+      startup: {
+        pageReady: function () {
+          document.querySelectorAll('script[type^="math/tex"]').forEach(function (node) {
+            var display = node.type.indexOf('mode=display') !== -1;
+            var replacement = document.createElement(display ? 'div' : 'span');
+            replacement.textContent = (display ? '\\[' : '\\(') + node.textContent + (display ? '\\]' : '\\)');
+            node.replaceWith(replacement);
+          });
+          return MathJax.startup.defaultPageReady();
+        }
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js"></script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+    .post-content { line-height: 1.85; overflow-wrap: anywhere; }
+    mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; max-width: 100%; padding: .4em 0; }
+  </style>
+</head>
