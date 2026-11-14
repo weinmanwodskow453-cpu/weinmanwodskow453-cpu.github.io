@@ -44,3 +44,17 @@ categories: 阅读
 网站地址：https://weinmanwodskow453-cpu.github.io
 
 可在仓库 Actions 查看构建结果。不要上传密码或 API 密钥。
+
+
+## 数学公式
+
+行内公式使用单个美元符号，例如：$f: M \to N$。
+
+独立公式前后留空行，并使用双美元符号：
+
+$$
+\chi(M) = \sum_{k=0}^{\dim M} (-1)^k b_k(M)
+$$
+
+公式由 MathJax 在浏览器中排版，需要能够访问 jsDelivr CDN。
+分类可以使用 categories: [几何拓扑]、categories: [Math-for-AI] 或 categories: [科研心得]。
