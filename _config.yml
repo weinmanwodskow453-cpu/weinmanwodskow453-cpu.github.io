@@ -1,0 +1,19 @@
+title: 我的博客
+description: 记录学习、阅读与生活中的思考。
+url: "https://weinmanwodskow453-cpu.github.io"
+baseurl: ""
+lang: zh-CN
+timezone: Asia/Shanghai
+theme: minima
+plugins:
+  - jekyll-feed
+header_pages:
+  - about.md
+permalink: /posts/:title/
+show_excerpts: true
+minima:
+  date_format: "%Y-%m-%d"
+exclude:
+  - WRITING.md
+  - Gemfile
+  - Gemfile.lock
