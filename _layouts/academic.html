@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'zh-CN' }}">
+{% include head.html %}
+<body>
+<a class="skip-link" href="#main">跳至正文</a>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="lihaozhe 首页">lihaozhe<span class="wordmark-dot">.</span></a>
+    <nav aria-label="主导航">
+      <a href="{{ '/#about' | relative_url }}">关于</a>
+      <a href="{{ '/#research' | relative_url }}">研究兴趣</a>
+      <a href="{{ '/#work' | relative_url }}">作品</a>
+      <a href="{{ '/#notes' | relative_url }}">笔记</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="shell">{{ content }}</main>
+<footer class="shell site-footer">
+  <span>© {{ 'now' | date: '%Y' }} lihaozhe</span>
+  <a href="https://github.com/weinmanwodskow453-cpu">GitHub ↗</a>
+</footer>
+</body>
+</html>

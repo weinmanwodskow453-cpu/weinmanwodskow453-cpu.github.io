@@ -1,19 +1,19 @@
-title: 我的博客
-description: 学习与科研笔记 · 几何拓扑 · Math for AI
+title: lihaozhe
+description: "几何拓扑与 Math for AI · 学术主页与个人作品集"
 url: "https://weinmanwodskow453-cpu.github.io"
 baseurl: ""
 lang: zh-CN
 timezone: Asia/Shanghai
-theme: minima
 plugins:
-  - jekyll-feed
-header_pages:
-  - about.md
-permalink: /posts/:title/
-show_excerpts: true
-minima:
-  date_format: "%Y-%m-%d"
+  - jekyll-seo-tag
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      published: false
 exclude:
   - WRITING.md
+  - README.md
   - Gemfile
   - Gemfile.lock

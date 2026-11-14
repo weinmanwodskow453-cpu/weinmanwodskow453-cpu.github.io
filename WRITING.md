@@ -1,60 +1,15 @@
-# 博客使用说明
+# 学术主页维护说明
 
-## 发布新文章
+网站：https://weinmanwodskow453-cpu.github.io/
 
-1. 在 GitHub 仓库进入 _posts 文件夹。
-2. 点击 Add file → Create new file。
-3. 文件名使用 YYYY-MM-DD-英文短标题.md，例如 2026-11-15-reading-notes.md。
-4. 按下面格式填写文章，将日期改为实际发布日期：
-   
-```markdown
----
-layout: post
-title: "阅读笔记"
-date: 2026-11-15 10:00:00 +0800
-categories: 阅读
----
+- 姓名与导航：_layouts/academic.html。
+- 首页个人介绍和研究兴趣：index.md。
+- 项目、作品和笔记：_data/portfolio.yml；取消注释并按示例添加真实条目即可。没有内容时显示简洁提示。
+- 头像：assets/images/portrait.jpg。
+- 视觉样式：assets/academic.css。
+- 网站标题和简介：_config.yml。
 
-这里写文章摘要。
+学校、院系、邮箱、履历、论文暂未填写。需要展示时再补充真实信息。
+旧博客文章保留在 _posts，但已设置为不发布，不会出现在主页上。
 
-<!--more-->
-
-## 正文
-
-这里写文章内容。
-```
-
-5. 点击 Commit changes，提交到 main 分支。开启 Pages 后，更新会自动触发构建。
-6. 请使用当前或过去的日期；未来日期的文章通常不会立即显示。
-
-## 修改博客
-
-- 名称和介绍：编辑 _config.yml 中的 title、description。
-- 关于页：编辑 about.md。
-- 首页介绍：编辑 index.md。
-- 图片：上传到 assets/images，然后在文章中使用 ![说明](/assets/images/文件名.png)。
-
-## 首次开启 GitHub Pages
-
-进入仓库 Settings → Pages，在 Build and deployment 中：
-- Source 选择 Deploy from a branch。
-- Branch 选择 main，目录选择 / (root)。
-- 点击 Save，等待 GitHub 构建完成。
-
-网站地址：https://weinmanwodskow453-cpu.github.io
-
-可在仓库 Actions 查看构建结果。不要上传密码或 API 密钥。
-
-
-## 数学公式
-
-行内公式使用单个美元符号，例如：$f: M \to N$。
-
-独立公式前后留空行，并使用双美元符号：
-
-$$
-\chi(M) = \sum_{k=0}^{\dim M} (-1)^k b_k(M)
-$$
-
-公式由 MathJax 在浏览器中排版，需要能够访问 jsDelivr CDN。
-分类可以使用 categories: [几何拓扑]、categories: [Math-for-AI] 或 categories: [科研心得]。
+修改后提交到 main 分支，GitHub Pages 会自动构建。公式支持沿用 MathJax，需要访问 jsDelivr CDN。

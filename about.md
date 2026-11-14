@@ -1,21 +1,6 @@
 ---
-layout: page
-title: 关于
+layout: academic
+title: 关于 lihaozhe
 permalink: /about/
 ---
-
-你好，欢迎来到我的博客。
-
-这里主要记录我在学习和科研中的心得。我的兴趣方向是**几何拓扑**和 **Math for AI**。
-
-我希望通过写作梳理概念、推敲证明、整理阅读中的线索，也保留那些暂时没有答案的问题。文章会随着理解的加深继续修改。
-
-## 记录的内容
-
-- **几何拓扑**：学习笔记、概念理解与证明思路。
-- **Math for AI**：相关数学问题、阅读与思考。
-- **科研心得**：论文阅读、问题整理与探索过程中的收获。
-
-## 联系
-
-[GitHub](https://github.com/weinmanwodskow453-cpu)
+<section class="section-block standalone"><p class="eyebrow">ABOUT</p><h1>lihaozhe</h1><p class="intro">我的兴趣方向是几何拓扑与 Math for AI。这个网站用于整理学习与科研中的思考，并展示个人作品。</p><a class="text-link" href="{{ '/' | relative_url }}">返回主页 ↗</a></section>

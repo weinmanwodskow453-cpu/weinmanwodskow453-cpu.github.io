@@ -1,0 +1,9 @@
+# 添加真实项目后，首页会自动展示。链接请使用完整 URL 或站内路径。
+# projects:
+#   - title: 项目名称
+#     description: 简短介绍
+#     url: https://github.com/your-name/your-project
+#     kind: 研究项目
+projects: []
+# notes 使用与 projects 相同的字段。
+notes: []
